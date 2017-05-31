@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "PumlViewer",
+	"version": "0.1",
+	"description": "hogehoge",
+	"content_scripts": [
+		{
+			"matches": ["https://github.com/*"],
+			"js": ["jquery-3.2.1.min.js", "content_script.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": {
+			"16": "images/icon16.png",
+			"24": "images/icon24.png",
+			"32": "images/icon32.png"
+		},
+		"default_title": "PumlViewer",
+		"default_popup": "popup.html"
+	}
+}
